@@ -343,7 +343,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background: url(../images/cover.jpg);
+	background: url(../images/bg1.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -381,8 +381,37 @@ textarea.form-control {
 	padding: 0 15px;
 }
 
-.intro h1{
-    font-weight: 800;
+.path{    
+stroke:black;
+fill: #999999 ;
+stroke-width:4px;
+stroke-dasharray: 3000;
+stroke-dashoffset:3000;
+animation: DASH 7s ease-in alternate forwards;
+-webkit-animation:DASH 7s ease-in 0s forwards;
+-o-animation:DASH 7s ease-in 0s forwards;
+animation:DASH 7s ease-in 0s forwards;
+}
+
+@keyframes DASH{
+0%{stroke-dashoffset:3000;fill:rgba(255,255,255,0);}
+100%{stroke-dashoffset:0;fill:#999999;}
+}
+@-moz-keyframes DASH{
+0%{stroke-dashoffset:3000;fill:rgba(255,255,255,0);}
+100%{stroke-dashoffset:0;fill:#999999;}
+}
+@-webkit-keyframes DASH{
+0%{stroke-dashoffset:3000;fill:rgba(255,255,255,0);}
+100%{stroke-dashoffset:0;fill:#999999;}
+}
+@-o-keyframes DASH{
+0%{stroke-dashoffset:3000;fill:rgba(255,255,255,0);}
+100%{stroke-dashoffset:0;fill:#999999;}
+}
+@-ms-keyframes DASHf{
+0%{stroke-dashoffset:3000;fill:rgba(255,255,255,0);}
+100%{stroke-dashoffset:0;fill:#999999;}
 }
 
 .start {
